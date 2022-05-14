@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Mem Slider</title>
-    <link rel="shortcut icon" href="./image/smile.ico" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <h1 class="title">CSS Mem Slider</h1>
-    <input type="radio" class="mem1" checked />
-      <input type="radio" class="mem2" />
-      <input type="radio" class="mem3" />
-      <input type="radio" class="mem4" />
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Mem Slider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./image/smile.ico">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1 class="title">CSS Mem Slider</h1>
+  <div class="wrapper">
 
+    <input type="radio" name="item" id="slide1" checked>
+    <input type="radio" name="item" id="slide2">
+    <input type="radio" name="item" id="slide3">
+    <input type="radio" name="item" id="slide4">
 
     <div class="slider">
-        
-
+      <img class="block" src="./image/allow.png" alt="Allow, Allow">
+      <img class="block" src="./image/code.png" alt="Code">
+      <img class="block" src="./image/dno.jpg" alt="Dno">
+      <img class="block" src="./image/student.jpg" alt="Student">
     </div>
-    
+
+    <div class="switch">
+      <div class="content">
+        <p class="text">fdvfv</p>
+        <p class="text">fvfvf</p>
+        <p class="text">jmjnh</p>
+        <p class="text">,kk,k</p>
+      </div>
 
       <div class="controls">
-        <label for="mem1"></label>
-        <label for="mem2"></label>
-        <label for="mem3"></label>
-        <label for="mem4"></label>
-     
+        <label class="btn-slide1" for="slide1"></label>
+        <label class="btn-slide2" for="slide2"></label>
+        <label class="btn-slide3" for="slide3"></label>
+        <label class="btn-slide4" for="slide4"></label>
+      </div>
     </div>
-  </body>
+
+  </div>
+</body>
 </html>
