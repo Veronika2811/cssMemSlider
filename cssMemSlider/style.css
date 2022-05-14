@@ -56,6 +56,7 @@ img {
 }
 
 .text {
+  margin: auto 0;
   grid-area: 1/1/2/2;
   opacity: 0;
   font-size: 3rem;
@@ -65,18 +66,28 @@ img {
 .controls {
   display: flex;
   justify-content: flex-end;
-  gap: 0.5rem;
 }
 
 label {
-  width: 1.5rem;
-  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+}
+
+.btn {
+  width: 2rem;
+  height: 2rem;
   border-radius: 100%;
   background-color: #16ad9e;
 }
 
-label:hover {
+label:hover .btn {
   background-color: #d1f7f3;
+  cursor: pointer;
+}
+
+label:hover {
   cursor: pointer;
 }
 
@@ -88,10 +99,10 @@ label:hover {
   animation: deployment 2s ease;
 }
 
-#slide1:checked ~ .switch .controls label:nth-child(1),
-#slide2:checked ~ .switch .controls label:nth-child(2),
-#slide3:checked ~ .switch .controls label:nth-child(3),
-#slide4:checked ~ .switch .controls label:nth-child(4) {
+#slide1:checked ~ .switch .controls label:nth-child(1) .btn,
+#slide2:checked ~ .switch .controls label:nth-child(2) .btn,
+#slide3:checked ~ .switch .controls label:nth-child(3) .btn,
+#slide4:checked ~ .switch .controls label:nth-child(4) .btn {
   background-color: transparent;
   border: 1px solid #1cd9c6;
   cursor: default;
@@ -148,7 +159,7 @@ input#slide4:checked ~ .switch .text:nth-child(4) {
     font-size: 1.5rem;
   }
 
-  label {
+  .btn {
     width: 1rem;
     height: 1rem;
   }
