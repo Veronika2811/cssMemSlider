@@ -82,6 +82,11 @@ label {
   background-color: #16ad9e;
 }
 
+label:active .btn{
+  width: 1rem;
+  height: 1rem;
+}
+
 label:hover .btn {
   background-color: #d1f7f3;
   cursor: pointer;
